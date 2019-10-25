@@ -1,0 +1,87 @@
+{
+  "extends": [
+    "plugin:vue/base",
+    "airbnb-base",
+    "eslint:recommended"
+  ],
+  "env": {
+    "browser": true,
+    "es6": true,
+    "node": true
+  },
+  "plugins": ["testcafe"],
+  "rules": {
+    "import/no-dynamic-require": "off",
+    "import/no-extraneous-dependencies": "off",
+    "import/first": "off",
+    "import/prefer-default-export": "off",
+    "arrow-parens": "off",
+    "import/no-unresolved": 0,
+    "no-plusplus": "off",
+    "no-console": "off",
+    "object-curly-newline": "off",
+    "no-return-await": "off",
+    "no-underscore-dangle": "off",
+    "no-proto": "off",
+    "vue/html-self-closing": "off",
+    "vue/no-parsing-error": [2, {
+      "x-invalid-end-tag": false
+    }],
+    "vue/order-in-components": ["error", {
+      "order": [
+        "el",
+        "name",
+        ["template", "render"],
+        "renderError",
+        "parent",
+        "functional",
+        ["delimiters", "comments"],
+        ["components", "directives", "filters"],
+        "extends",
+        "mixins",
+        "inheritAttrs",
+        "model",
+        ["props", "propsData"],
+        "data",
+        "computed",
+        "watch",
+        "methods",
+        "LIFECYCLE_HOOKS"
+      ]
+    }],
+    "consistent-return": "off",
+    "max-len": "off",
+    "no-useless-escape": "off",
+    "camelcase": ["warn", {
+      "properties": "always"
+    }],
+    "import/no-unassigned-import": 0,
+    "vue/v-bind-style": ["warn", "shorthand"],
+    "vue/html-end-tags": "error",
+    "vue/html-indent": ["warn", 2, {
+      "attribute": 1,
+      "closeBracket": 0,
+      "ignores": []
+    }],
+    "vue/html-quotes": ["error", "double"],
+    "no-process-env": 0,
+    "linebreak-style": 0,
+    "quotes": ["warn", "single", { "allowTemplateLiterals": true }],
+    "semi": ["warn", "never"]
+  },
+  "globals": {
+    "process": true,
+    "console": true,
+    "require": true,
+    "__dirname": true,
+    "module": true
+  },
+  "parserOptions": {
+    "ecmaVersion": 2017,
+    "parser": "babel-eslint",
+    "ecmaFeatures": {
+      "jsx": true
+    },
+    "sourceType": "module"
+  }
+}

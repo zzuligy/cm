@@ -1,0 +1,32 @@
+{
+  "name": "cm",
+  "version": "1.0.0",
+  "description": "- 组件抽象为组件库迭代太慢 - 以组件为 维度维护、迭代组件、轻便、速度。 - 最终搭建一个组件市场、可以快速查看、分享、使用组件",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/zzuligy/cm.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/zzuligy/cm/issues"
+  },
+  "homepage": "https://github.com/zzuligy/cm#readme",
+  "dependencies": {
+    "chalk": "^2.4.2",
+    "cli-spinners": "^2.2.0",
+    "commander": "^3.0.2",
+    "debug": "^4.1.1",
+    "execa": "^3.2.0",
+    "fs-extra": "^8.1.0",
+    "gitlab": "^11.3.2",
+    "inquirer": "^7.0.0",
+    "log-update": "^3.3.0",
+    "ora": "^4.0.2"
+  }
+}
